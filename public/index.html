@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyScript Offline</title>
+  <script type="module" src="/pyscript/core.js"></script>
+  <link rel="stylesheet" href="/pyscript/core.css">
+</head>
+
+<body>
+  <script type="py" src="./terminal.py" config="./pyscript.json" terminal worker>
+  </script>
+  <script type="py-editor" src="./terminal.py" config="./pyscript.json">
+    import duckdb
+
+print("Hello world")
+
+# duckdb run select 1
+x = duckdb.sql("select 1")
+
+  </script>
+  <script type="mpy-editor" src="./terminal.py" config="./pyscript.json">
+    import duckdb
+
+print("Hello world")
+
+# duckdb run select 1
+x = duckdb.sql("select 1")
+
+  </script>
+
+</body>
+
+</html>
